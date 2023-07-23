@@ -1,0 +1,20 @@
+
+* {
+    
+    transition: all;
+    transition: 0.3s;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    background-color: #fff;
+}
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #454545;
+}
