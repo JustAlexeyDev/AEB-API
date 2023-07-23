@@ -1,98 +1,103 @@
-
+/* Reset and base styles  */
 * {
-    overflow-x: hidden;
-    transition: all;
-    transition: 0.3s;
+	padding: 0px;
+	margin: 0px;
+	border: none;
     font-family: 'Open Sans', sans-serif;
 }
-body {
-    width: 100%;
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+    transition: all;
+    transition: 0.3s;
 }
-header {
-    display: flex;
-    width: 100%;
-    background-color: #fff;
-    justify-content: space-between;
-    padding: 10px;
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+    color: #373737;
 }
-.header-end {
-    margin-right: 20px;
-}
-button {
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    color: #454545;
-}
-a {
-    color: #454545;
+
+a:hover  {
     text-decoration: none;
 }
-.main {
-    display: flex;
-    padding: 16px;
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+
+
+header {
     width: 100%;
+    display: flex;
     justify-content: space-between;
-}
-#main  {
-    display: flex;
-    width: 100%;
-    font-size: 10px;
-}
-.icons {
-    display: flex;
-    gap: 15px;
-}
-.partner-btn {
-    background: var(--unnamed, linear-gradient(225deg, #02A3FF 0%, #2A84E9 100%));
-    color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 10px;
-}
-#main  p {
-    font-size: 6px;
-    display: flex;
-}
-.info {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    background-color: #37b6ff4a;
-}
-.info h1 {
-    font-size: 20px;
-    color: #2e6bef;
-}
-.info p {
-    font-size: 8px;
-}
-
-
-footer {
-    width: 100%;
-    background-color: #37B6FF;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-}
-.footer-start {
-    display: flex;
-}
-.footer-start-top {
-    display: flex;
-}
-
-
-@media screen and (max-width: 410px) {
-    #hide {
-        display: none;
-    }
-}
-@media screen and (min-width: 720px) {
-    #hide {
-        display: block;
-    }
+    padding: 10px;
+    font-weight: 0;
 }
