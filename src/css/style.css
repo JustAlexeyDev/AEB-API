@@ -108,7 +108,6 @@ header {
 }
 .wrapper {
     width: 100%;
-    padding: 10px;
 }
 .wrapper p{
     font-size: 10px;
@@ -117,6 +116,7 @@ header {
 .content {
     display: flex;
     justify-content: space-between;
+    padding: 10px;
 }
 .content-left {
     width: 100%;
@@ -146,9 +146,93 @@ header {
     padding: 10px;
     justify-content: space-between;
     text-align: center;
+    
 }
 .info h1 {
     font-size: 22px;
+}
+.howwork {
+    padding: 16px;
+}
+.howwork h1 {
+    font-size: 20px;
+}
+.cashback {
+    background-color: #2A84E9;
+    color: #fff;
+    padding: 5px;
+    border-radius: 9999px;
+    font-size: 14px;
+}
+.cashback-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+.cashback-block {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+}
+.cashback-block p {
+    font-size: 15px;
+}
+.icons {
+    display: flex;
+    justify-content: start;
+}
+.info-person {
+    display: flex;
+    flex-direction: column;
+}
+.person-name p {
+    font-size: 15px;
+}
+.comments {
+    padding: 16px;
+}
+.contact {
+    padding: 16px;
+}
+.send-mail {
+    display: flex;
+    justify-content: space-between;
+}
+input {
+    border: 2px solid #000;
+    border-radius: 5px;
+    max-width: 150px;
+    padding: 5px;
+    margin: 5px;
+}
+input:hover,
+input:focus,
+input:active {
+    border: 2px solid #02A3FF;
+}
+.inputs {
+    display: flex;
+}
+form {
+   display: flex;
+   flex-direction: column;
+}
+.flex {
+    display: flex;
+}
+footer {
+    background-color: #02A3FF;
+    width: 100%;
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    color: #fff;
+}
+.copy {
+    font-size: 10px;
 }
 @media screen and (max-width: 400px) {
     #hide {
