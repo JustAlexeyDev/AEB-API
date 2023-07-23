@@ -7,14 +7,44 @@
 }
 body {
     background-color: #fff;
+    margin: 0;
+    padding: 0;
 }
 header {
+    width: 100%;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
+    padding: 10px;
+}
+.header-end {
+    margin-right: 20px;
 }
 button {
     background-color: rgba(0, 0, 0, 0);
     border: none;
     color: #454545;
+}
+a {
+    color: #454545;
+    text-decoration: none;
+}
+main {
+    padding: 16px;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #37B6FF;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-start {
+    display: flex;
+}
+.footer-start-top {
+    display: flex;
 }
