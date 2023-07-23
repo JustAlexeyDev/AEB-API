@@ -31,9 +31,13 @@ aside, nav, footer, header, section, main {
 	display: block;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+p {
     font-size: inherit;
 	font-weight: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+	font-weight: 700;
 }
 
 ul, ul li {
@@ -100,4 +104,54 @@ header {
     justify-content: space-between;
     padding: 10px;
     font-weight: 0;
+    height: 100px;
+}
+.wrapper {
+    width: 100%;
+    padding: 10px;
+}
+.wrapper p{
+    font-size: 10px;
+    
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+.content-left {
+    width: 100%;
+}
+.content-left img{
+    width: auto;
+}
+.icons {
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+.partner-btn {
+    margin-top: 40px;
+    border-radius: 5px;
+    background: var(--unnamed, linear-gradient(225deg, #02A3FF 0%, #2A84E9 100%));
+    color: #fff;
+    padding: 10px;
+}
+.info {
+    background-color: #2A84E9;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    text-align: center;
+}
+.info h1 {
+    font-size: 22px;
+}
+@media screen and (max-width: 400px) {
+    #hide {
+        display: none;
+    }
 }
